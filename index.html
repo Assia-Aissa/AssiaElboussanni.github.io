@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assia El Boussanni - Data Scientist & ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-left">
+                <img src="/about_me.png" alt="Assia El Boussanni" class="profile-img">
+                <div class="header-name" id="headerName">Assia El Boussanni</div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="/Resume.pdf" class="nav-link" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume">Resume</a>
+                <button class="lang-btn" id="langBtn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span id="langText">EN</span>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-controls">
+                <button class="lang-btn-mobile" id="langBtnMobile">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </button>
+                <button class="menu-btn" id="menuBtn">
+                    <svg class="icon menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="icon close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile hidden" id="navMobile">
+            <a href="#projects" class="nav-link-mobile" data-i18n="nav.projects">Projects</a>
+            <a href="#blog" class="nav-link-mobile" data-i18n="nav.blog">Blog</a>
+            <a href="#about" class="nav-link-mobile" data-i18n="nav.about">About</a>
+            <a href="#contact" class="nav-link-mobile" data-i18n="nav.contact">Contact</a>
+            <a href="/Resume.pdf" class="nav-link-mobile" target="_blank" rel="noopener noreferrer" data-i18n="nav.resume">Resume</a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting" data-i18n="hero.greeting">Hello! 👋</p>
+                <h1 class="hero-title">
+                    I'm <span class="hero-name" data-i18n="hero.name">Assia El Boussanni</span>.<br>
+                    <span class="hero-subtitle" data-i18n="hero.title">Data Scientist & ML Engineer</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero.description">
+                    I transform data into actionable insights using machine learning, statistical analysis, and advanced analytics.
+                </p>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://github.com/Assia-Aissa" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/assia-el-boussanni-4b3a902a9/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://hashnode.com/@assiaelboussanni" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://medium.com/@assiaelboussanni" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line"></div>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/about_me.png" alt="Assia El Boussanni">
+                </div>
+                <div class="about-text">
+                    <div class="about-description" id="aboutDescription">
+                        <p>Passionate data scientist with expertise in machine learning, statistical modeling, and data visualization. I love turning complex problems into actionable insights.</p>
+                        <p>Currently pursuing a Master's in Data Science and Big Data in Morocco, I explore new AI tools and trends to deliver innovative solutions.</p>
+                        <p>I share knowledge through blogging, create digital planners on Ko-fi, participate in hackathons, and explore creative projects, all of which fuel my curiosity and problem-solving mindset.</p>
+                        <p>I'm eager to contribute to impactful projects and grow as a data professional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line"></div>
+                <h2 class="section-title" data-i18n="skills.title">Skills & Tools</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.programming">Programming</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>Python</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Java</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Spring Boot</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>SQL</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Git</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>GitHub</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Docker</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Flask</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                            <path d="M8.5 8.5v.01"></path>
+                            <path d="M16 15.5v.01"></path>
+                            <path d="M12 12v.01"></path>
+                            <path d="M11 17v.01"></path>
+                            <path d="M7 14v.01"></path>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.ml">Machine Learning</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>Scikit-learn</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>TensorFlow</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>XGBoost</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>SVM</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Linear Regression</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Logistic Regression</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Random Forests</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Decision Trees</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.visualization">Visualization</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>Tableau</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Matplotlib</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Seaborn</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.databases">Databases</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>MongoDB</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>MySQL</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Oracle DB</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+
+                <!-- Big Data -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.bigdata">Big Data</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>Hadoop ecosystem</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                        <h3 class="skill-title" data-i18n="skills.cloud">Cloud</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>AWS</span><div class="skill-dot"></div></div>
+                        <div class="skill-item"><span>Azure</span><div class="skill-dot"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line"></div>
+                <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-line"></div>
+                <h2 class="section-title" data-i18n="blog.title">Latest Blog Posts</h2>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <div class="section-line"></div>
+                <h2 class="section-title" data-i18n="contact.title">Connect With Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p class="contact-description" data-i18n="contact.description">
+                Let's connect and discuss data science, machine learning, and innovative projects.
+            </p>
+
+            <div class="contact-social">
+                <a href="https://github.com/Assia-Aissa" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="icon-large" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/assia-el-boussanni-4b3a902a9/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="icon-large" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://hashnode.com/@assiaelboussanni" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </a>
+                <a href="https://medium.com/@assiaelboussanni" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal hidden" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Projects data with correct image paths and links
+        const projects = [
+            {
+                id: "1",
+                title: "AI-Powered Math Tutor",
+                summary: "Developed a multi-agent AI tutoring system for primary school students using LangChain, Gemini API, and Firebase for personalized learning experiences.",
+                image: "/math_tutor.jpg",
+                tags: ["Python", "LangChain", "Gemini API", "Firebase", "Flask"],
+                githubUrl: "https://github.com/Assia-Aissa/Primary_Math_tutor_agent",
+                blogUrl: "https://assia-ml-coding.hashnode.dev/making-math-smarter-my-ai-powered-multi-agent-tutor",
+                details: {
+                    situation: "Traditional primary education math lessons follow a one-size-fits-all approach, leaving many students behind with varying paces and understanding levels.",
+                    task: "Design and build an AI-powered tutor that provides personalized math help to primary school students, mimicking human tutor support.",
+                    action: "Developed a multi-agent AI system using Python & Flask, LangChain for workflow orchestration, Hugging Face LLMs & FAISS for content retrieval, Gemini API for explanations, and Firebase for progress tracking. Created four specialized agents: Talker, Quiz Master, Detective, and Planner.",
+                    result: "Created a fully functional, interactive AI math tutor that provides personalized learning experiences, engages children with clear explanations, and tracks progress over time with positive testing feedback.",
+                    keyFindings: [
+                        "Multi-agent architecture effectively mimics human tutoring approach",
+                        "Personalized learning paths significantly improve student engagement",
+                        "Real-time progress tracking enables continuous learning optimization"
+                    ]
+                }
+            },
+            {
+                id: "2",
+                title: "High-Performance AI Intrusion Detection System",
+                summary: "Engineered a real-time intrusion detection system achieving 99.59% accuracy using ensemble methods and deployed on AWS with full MLOps pipeline.",
+                image: "/ai_security_system.jpg",
+                tags: ["Python", "AWS", "SageMaker", "Random Forest", "XGBoost", "CNN-LSTM"],
+                githubUrl: "https://github.com/Assia-Aissa/Intrusion-Detection-AWS-AI",
+                blogUrl: "https://assia-ml-coding.hashnode.dev/building-an-ai-security-system-for-the-cloud",
+                details: {
+                    situation: "Traditional security tools are failing against escalating cloud cyber threats due to inability to adapt to new attacks in complex cloud environments.",
+                    task: "Architect, develop, and deploy a production-grade AI security system capable of identifying both known and novel threats in real-time.",
+                    action: "Engineered end-to-end solution: custom preprocessing pipeline for UNSW-NB15 and CICIDS2017 datasets, compared 10+ ML algorithms including CNN-LSTM hybrid and ensemble methods, built full MLOps infrastructure on AWS using S3, SageMaker, and EC2 for real-time inference.",
+                    result: "Achieved state-of-the-art 99.59% accuracy with Random Forest, solved 'long tail' problem with 85% precision on rare attacks, deployed functional real-time system processing live network streams in milliseconds.",
+                    keyFindings: [
+                        "Tree-based ensembles outperform deep learning for production IDS",
+                        "Ensemble methods excel at detecting rare but critical attacks",
+                        "Real-time AWS deployment proves practical viability for cybersecurity"
+                    ]
+                }
+            }
+        ];
+
+        // Blog posts data with correct image paths and links
+        const blogPosts = [
+            {
+                id: "1",
+                title: "How I Built Logistic Regression from Scratch",
+                excerpt: "A data science student's journey from using scikit-learn as a 'black box' to understanding the mathematical foundations by implementing logistic regression from scratch, including the sigmoid function, cost function, and gradient descent.",
+                date: "2025-05-01",
+                readTime: "5 min read",
+                tags: ["Machine Learning", "Python", "Mathematics", "Data Science"],
+                url: "https://assia-ml-coding.hashnode.dev/my-machine-learning-journey-from-scikit-learns-logistic-regression-to-mathematical-implementation",
+                image: "/logistic-regression-from-scratch.jpg"
+            },
+            {
+                id: "2",
+                title: "Machine Learning Workflow: My Take on Jason Brownlee's Process",
+                excerpt: "A comprehensive breakdown of the 5-step machine learning workflow: defining problems, preparing data, spot-checking algorithms, improving results through tuning and ensembles, and effectively presenting findings.",
+                date: "2025-07-25",
+                readTime: "11 min read",
+                tags: ["Machine Learning", "Workflow", "Data Science", "Best Practices"],
+                url: "https://assia-ml-coding.hashnode.dev/machine-learning-part-2-machine-learning-workflow-my-take-on-jason-brownlees-process",
+                image: "/ml-workflow-jason-brownlee.jpg"
+            },
+            {
+                id: "3",
+                title: "Unlock the Story in Your Data: A Data Scientist's Guide to Descriptive Statistics",
+                excerpt: "A comprehensive guide to understanding your data through descriptive statistics - from measures of central tendency and variability to distribution shapes and powerful visualizations for effective exploratory data analysis.",
+                date: "2025-09-28",
+                readTime: "23 min read",
+                tags: ["Data Science", "Statistics", "EDA", "Data Visualization", "Machine Learning"],
+                url: "https://assia-ml-coding.hashnode.dev/unlock-the-story-in-your-data-a-data-scientists-guide-to-descriptive-statistics",
+                image: "/descriptive-statistics-guide.jpg"
+            },
+            {
+                id: "4",
+                title: "Machine Learning - How Do I Get Started, inspired by My Take on Jason Brownlee",
+                excerpt: "A student-friendly roadmap to machine learning covering mindset, finding your tribe, choosing tools, practicing with datasets, and building an effective portfolio - inspired by Jason Brownlee's approach.",
+                date: "2025-08-02",
+                readTime: "7 min read",
+                tags: ["Machine Learning", "Beginner Guide", "Python", "Career", "Learning"],
+                url: "https://assia-ml-coding.hashnode.dev/machine-learning-part-3-how-do-i-get-started-inspired-by-my-take-on-jason-brownlee",
+                image: "/ml-how-iget-start.png"
+            }
+        ];
+
+        // Render projects
+        function renderProjects() {
+            const projectsGrid = document.getElementById('projectsGrid');
+            projectsGrid.innerHTML = '';
+            
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                projectCard.innerHTML = `
+                    <div class="project-image">
+                        <img src="${project.image}" alt="${project.title}" onerror="this.src='/placeholder.svg'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-summary">${project.summary}</p>
+                        <div class="project-tags">
+                            ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-sm btn-primary view-details-btn" data-project-id="${project.id}">
+                                View Details
+                            </button>
+                            <a href="${project.githubUrl}" class="btn-sm btn-outline" target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="${project.blogUrl}" class="btn-sm btn-outline" target="_blank" rel="noopener noreferrer" title="Blog Post">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                projectsGrid.appendChild(projectCard);
+            });
+
+            // Add event listeners for view details buttons
+            document.querySelectorAll('.view-details-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const projectId = this.getAttribute('data-project-id');
+                    showProjectDetails(projectId);
+                });
+            });
+        }
+
+        // Render blog posts
+        function renderBlogPosts() {
+            const blogGrid = document.getElementById('blogGrid');
+            blogGrid.innerHTML = '';
+            
+            blogPosts.forEach(post => {
+                const blogCard = document.createElement('div');
+                blogCard.className = 'blog-card';
+                blogCard.innerHTML = `
+                    <div class="blog-image">
+                        <img src="${post.image}" alt="${post.title}" onerror="this.src='/placeholder.svg'">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            ${new Date(post.date).toLocaleDateString()}
+                            <span style="margin: 0 8px">•</span>
+                            ${post.readTime}
+                        </div>
+                        <h3 class="blog-title">${post.title}</h3>
+                        <p class="blog-excerpt">${post.excerpt}</p>
+                        <div class="project-tags" style="margin-bottom: 1rem;">
+                            ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <a href="${post.url}" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Read More
+                        </a>
+                    </div>
+                `;
+                blogGrid.appendChild(blogCard);
+            });
+        }
+
+        // Show project details in modal
+        function showProjectDetails(projectId) {
+            const project = projects.find(p => p.id === projectId);
+            if (!project) return;
+
+            const modalBody = document.getElementById('modalBody');
+            modalBody.innerHTML = `
+                <h2 class="modal-title">${project.title}</h2>
+                <div class="modal-tags">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Situation</h3>
+                    <p class="modal-section-content">${project.details.situation}</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Task</h3>
+                    <p class="modal-section-content">${project.details.task}</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Action</h3>
+                    <p class="modal-section-content">${project.details.action}</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Result</h3>
+                    <p class="modal-section-content">${project.details.result}</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Key Findings</h3>
+                    <ul class="modal-findings">
+                        ${project.details.keyFindings.map(finding => `
+                            <li>${finding}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+                
+                <div class="modal-actions">
+                    <a href="${project.blogUrl}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Read More
+                    </a>
+                    <a href="${project.githubUrl}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            `;
+
+            // Show the modal
+            const modal = document.getElementById('projectModal');
+            modal.classList.remove('hidden');
+            
+            // Setup modal close functionality
+            setupModalClose();
+        }
+
+        // Setup modal close functionality
+        function setupModalClose() {
+            const modal = document.getElementById('projectModal');
+            const overlay = document.getElementById('modalOverlay');
+            const closeBtn = document.getElementById('modalClose');
+            
+            // Remove existing event listeners
+            const newOverlay = overlay.cloneNode(true);
+            overlay.parentNode.replaceChild(newOverlay, overlay);
+            
+            const newCloseBtn = closeBtn.cloneNode(true);
+            closeBtn.parentNode.replaceChild(newCloseBtn, closeBtn);
+            
+            // Add new event listeners
+            document.getElementById('modalOverlay').addEventListener('click', closeModal);
+            document.getElementById('modalClose').addEventListener('click', closeModal);
+            
+            // Close on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+
+        // Initialize projects and blog posts on load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProjects();
+            renderBlogPosts();
+        });
+    </script>
+</body>
+</html>
